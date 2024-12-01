@@ -13,16 +13,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
-
-
-    <link rel="stylesheet" href="/css/contato.css">
-
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
+        <nav class="navbar shadow navbar-expand-lg bg-body-tertiary py-3">
             <div class="container">
                 <a class="navbar-brand" href="#carouselExampleIndicators">Alerta+</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -36,19 +34,19 @@
                             <a class="nav-link mx-lg-2" href="index.html">Mapa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Ocorrências</a>
+                            <a class="nav-link mx-lg-2" href="ocorrencias.html">Ocorrências</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Ferramentas</a>
+                            <a class="nav-link mx-lg-2" href="ferramentas.html">Ferramentas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="contato.html">Comunicação</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Estatísticas</a>
+                            <a class="nav-link mx-lg-2" href="estatistica.html">Estatísticas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#">Suporte</a>
+                            <a class="nav-link mx-lg-2" href="suporte.html">Suporte</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="#">Login</a>
@@ -60,48 +58,11 @@
     </header>
 
     <main>
-        <section id="content-contato" class="container">
-            <h2 class="text-center mb-5">Fale Conosco</h2>
-            <form>
-
-                <div class="form-group mb-3">
-                    <label for="nome" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo">
-                </div>
-
-                <div class="form-group mb-3">
-                    <label for="telefone" class="form-label">Telefone</label>
-                    <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(xx) x xxxx-xxxx">
-                </div>
-
-                <div class="form-group mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="email@email.com">
-                </div>
-
-                <div class="form-group mb-3">
-                    <label for="serie" class="form-label">Motivo</label>
-                    <select class="form-control" id="serie" name="serie">
-                        <option value="" disabled selected>Selecione</option>
-                        <option value="sugestao">Sugestão</option>
-                        <option value="feedback">Feedback</option>
-                        <option value="reclamacao">Reclamação</option>
-                        <option value="elogio">Elogio</option>
-                    </select>
-                </div>
-
-                <div class="form-group mb-3">
-                    <label for="mensagem" class="form-label">Mensagem</label>
-                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4"
-                        placeholder="Escreva a sua mensagem ..."></textarea>
-                </div>
-
-                <button id="submitButton" class="btn btn-info text-white d-block mx-auto w-25 mt-5">Enviar</button>
-            </form>
-        </section>
+        <div id="map"></div>
     </main>
 
 
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="/js/index.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
