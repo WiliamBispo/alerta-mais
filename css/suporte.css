@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* NAVBAR */
 .navbar,
 .navbar a {
     font-family: "Nunito", sans-serif;
@@ -32,25 +33,4 @@
     color: #007bff;
 }
 
-/* FORMULARIO DE CONTATO */
-#content-contato {
-    margin-top: 3rem;
-
-}
-
-#content-contato h2 {
-    font-family: "Nunito", sans-serif;
-    font-size: 2rem;
-    font-weight: 800;
-}
-
-#content-contato label {
-    font-family: "Nunito", sans-serif;
-    font-weight: 800;
-}
-
-#content-contato button {
-    font-family: "Nunito", sans-serif;
-    font-weight: 800;
-    cursor: pointer;
-}
+/* SEÇÃO DO SUPORTE */
