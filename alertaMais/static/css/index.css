@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+.navbar,
+.navbar a {
+    font-family: "Nunito", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    color: #333;
+}
+
+.navbar .nav-link {
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #007bff;
+}
+
+.navbar .navbar-brand {
+    font-weight: 800;
+    font-size: 24px;
+    color: #333;
+}
+
+.navbar-brand:hover {
+    color: #007bff;
+}
+
+/* MAPA */
+#map {
+    width: 100%;
+    height: 89.2vh;
+}
