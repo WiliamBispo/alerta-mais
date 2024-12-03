@@ -34,3 +34,6 @@
 }
 
 /* SEÇÃO DE OCORRENCIAS */
+#content-ocorrencias h2 {
+    margin-bottom: 0;
+}
