@@ -1,0 +1,14 @@
+# Ignorar arquivos Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignorar ambientes virtuais
+venv/
+env/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos temporários do sistema
+.DS_Store
