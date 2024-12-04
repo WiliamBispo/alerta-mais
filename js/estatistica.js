@@ -7,15 +7,15 @@ const myChart = new Chart(ctx, {
             {
                 label: 'Roubos',
                 data: [150, 120, 180, 200, 170, 190],
-                borderColor: 'rgba(255, 99, 132, 1)',
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: '#003366',
+                backgroundColor: '#003366',
                 borderWidth: 2
             },
             {
                 label: 'Furtos',
                 data: [100, 80, 90, 110, 95, 105],
-                borderColor: 'rgba(54, 162, 235, 1)',
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: '#4CAF50',
+                backgroundColor: '#4CAF50',
                 borderWidth: 2
             }
         ]
@@ -41,15 +41,15 @@ const myCharts = new Chart(ctxs, {
             {
             label: 'Roubos',
             data: [120, 150, 100, 130],
-            backgroundColor: 'rgba(255, 99, 132, 0.6)',
-            borderColor: 'rgba(255, 99, 132, 1)',
+            backgroundColor: '#003366',
+            borderColor: '#003366',
             borderWidth: 1
         },
         {
             label: 'Furtos',
             data: [80, 70, 90, 85],
-            backgroundColor: 'rgba(54, 162, 235, 0.6)',
-            borderColor: 'rgba(54, 162, 235, 1)',
+            backgroundColor: '#4CAF50',
+            borderColor: '#4CAF50',
             borderWidth: 1
         }
         ]
