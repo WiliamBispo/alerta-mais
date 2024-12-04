@@ -13,11 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/jogos.css">
+    <link rel="stylesheet" href="/css/estatisticas.css">
 </head>
 
 <body>
+
     <header>
         <nav class="navbar shadow navbar-expand-lg bg-body-tertiary py-3">
             <div class="container">
@@ -47,7 +47,7 @@
                                 <li><a class="dropdown-item" href="/pages/jogos.html">Jogos</a></li>
                             </ul>
                         </li>
-                        
+
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="/pages/contato.html">Comunicação</a>
                         </li>
@@ -66,27 +66,21 @@
         </nav>
     </header>
 
-    <main id="content-ferramentas" class="container mt-4">
-        <h2 class="text-center mb-4">Jogos</h2>
+    <main id="content-estatisticas" class="container" style="padding-top: 3rem;">
+        <h2 class="text-center mb-4">Estatísticas</h2>
 
-        <!-- Card do Jogo Quiz -->
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1605902394069-ff2ae2430e62?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Quiz">
-                    <div class="card-body">
-                        <h5 class="card-title">Quiz de Segurança</h5>
-                        <p class="card-text">Teste seus conhecimentos sobre segurança pública com este quiz interativo.</p>
-                        <a href="/pages/quiz.html" class="btn btn-primary">Jogar Agora</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <iframe title="grafico-alerta-mais" width="100%" height="1060"
+            src="https://app.powerbi.com/view?r=eyJrIjoiZmFmZTZlZjItMWM4Mi00NDA5LTlkZTctNzUzODIzNzZhNjlmIiwidCI6ImRiYTQwZjc0LWE3MWItNDk2OC05ZjU2LTkwNWIzNzUzMWFmMiJ9"
+            frameborder="0" allowFullScreen="true">
+        </iframe>
+
     </main>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        </script>
+
 </body>
 
 </html>
