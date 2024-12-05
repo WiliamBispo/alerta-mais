@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -13,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/ferramentas.css">
+ 
+        <link rel="stylesheet" href="{% static 'css/ferramentas.css' %}">
 </head>
 
 <body>
@@ -35,9 +37,21 @@
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="/ocorrencias">Ocorrências</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/ferramentas">Ferramentas</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Ferramentas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/videos">Vídeos</a></li>
+                                <li><a class="dropdown-item" href="/cursos">Cursos</a></li>
+                                <li><a class="dropdown-item" href="
+                                    /jogos
+                                    ">Jogos</a></li>
+                            </ul>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="/contato">Comunicação</a>
                         </li>

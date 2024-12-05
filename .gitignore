@@ -12,3 +12,5 @@ env/
 
 # Ignorar arquivos temporários do sistema
 .DS_Store
+
+.vscode/

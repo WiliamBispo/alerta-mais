@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -15,11 +16,11 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/suporte.css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/suporte.css' %}">
 </head>
 
 <body>
-
     <header>
         <nav class="navbar shadow navbar-expand-lg bg-body-tertiary py-3">
             <div class="container">
@@ -37,9 +38,21 @@
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="/ocorrencias">Ocorrências</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/ferramentas">Ferramentas</a>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Ferramentas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/videos">Vídeos</a></li>
+                                <li><a class="dropdown-item" href="/cursos">Cursos</a></li>
+                                <li><a class="dropdown-item" href="
+                                    /jogos
+                                    ">Jogos</a></li>
+                            </ul>
                         </li>
+
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="/contato">Comunicação</a>
                         </li>
@@ -59,7 +72,7 @@
     </header>
 
     <main>
-        <section id="content-suporte" class="container">
+        <section id="content-suporte" class="container mt-4">
             <div>
                 <h2 class="text-center mb-4">Central de Suporte</h2>
                 <p>Precisa de ajuda? Estamos aqui para te ajudar!</p>
