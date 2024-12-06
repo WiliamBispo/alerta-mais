@@ -4,36 +4,7 @@
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    padding: 6rem;
-}
-
-.card {
-    background-color: #023463;
-    border-radius: 24px;
-    border: 0;
-    margin: 1rem;
-}
-
-.card h6 {
-    font-size: 1rem;
-    font-weight: lighter;
-    text-align: justify;
-}
-
-.title {
-    color: #1E1E1E;
-    font-weight: bold;
-    font-size: 3rem;
-}
-
-.subtitle {
-    color: #1282ED;
-    font-weight: bold;
-    font-size: 3rem;
-}
-
-span {
-    color: #1282ED;
+    padding: 8rem;
 }
 
 .left-column {
@@ -69,6 +40,42 @@ span {
     border-radius: 15px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
 }
+
+
+
+
+
+
+.card {
+    background-color: #023463;
+    border-radius: 24px;
+    border: 0;
+    margin: 1rem;
+}
+
+.card h6 {
+    font-size: 1rem;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+.title {
+    color: #1E1E1E;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.subtitle {
+    color: #1282ED;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+span {
+    color: #1282ED;
+}
+
+
 
 img.img {
     width: 180vw;
