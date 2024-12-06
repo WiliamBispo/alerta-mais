@@ -1,14 +1,17 @@
+#content-suporte {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2rem;
+}
+
 #content-suporte h2 {
-    font-family: "Nunito", sans-serif;
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: 800;
 }
 
 #content-suporte p {
-    font-family: "Nunito", sans-serif;
     text-align: center;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 0.75rem;
 }
 
@@ -20,11 +23,11 @@
 
 .accordion-button {
     border-radius: 20px;
-    background-color: #25AADA;
+    background-color: #023463e8;
     color: white;
     border: none;
     font-size: 17px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .accordion .accordion-item:first-child .accordion-button {
@@ -42,7 +45,7 @@
 
 .whatsapp-icon {
     position: fixed;
-    bottom: 30px;
+    bottom: 100px;
     right: 30px;
     background-color: #25D366;
     border-radius: 50%;
@@ -54,11 +57,12 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .whatsapp-icon:hover {
-    background-color: #128C7E;
-    transition: background-color 0.3s ease;
+    transform: scale(1.1);
+
 }
 
 .whatsapp-icon i {
