@@ -1,16 +1,26 @@
+#content-contato {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2rem;
+}
+
 #content-contato h2 {
-    font-family: "Nunito", sans-serif;
     font-size: 2rem;
     font-weight: 800;
 }
 
 #content-contato label {
-    font-family: "Nunito", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 #content-contato button {
-    font-family: "Nunito", sans-serif;
-    font-weight: 800;
+    background-color: #023463;
+    border: none;
+    font-weight: 700;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+#submitButton:hover {
+    background-color: #25AADA;
 }

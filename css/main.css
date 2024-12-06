@@ -7,11 +7,12 @@
 /* NAVBAR */
 .navbar,
 .navbar a {
-    font-family: "Nunito", sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #023463;
     font-size: 16px;
     font-weight: 700;
     font-style: normal;
-    color: #333;
+    color: #fff;
 }
 
 .navbar .nav-link {
@@ -20,15 +21,15 @@
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-    color: #007bff;
+    color: #25AADA;
 }
 
 .navbar .navbar-brand {
     font-weight: 800;
     font-size: 24px;
-    color: #333;
+    color: #fff;
 }
 
 .navbar-brand:hover {
-    color: #007bff;
+    color: #25AADA;
 }

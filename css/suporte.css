@@ -1,14 +1,17 @@
+#content-suporte {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2rem;
+}
+
 #content-suporte h2 {
-    font-family: "Nunito", sans-serif;
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: 800;
 }
 
 #content-suporte p {
-    font-family: "Nunito", sans-serif;
     text-align: center;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
     padding-bottom: 0.75rem;
 }
 
@@ -20,11 +23,11 @@
 
 .accordion-button {
     border-radius: 20px;
-    background-color: #25AADA;
+    background-color: #023463e8;
     color: white;
     border: none;
     font-size: 17px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .accordion .accordion-item:first-child .accordion-button {

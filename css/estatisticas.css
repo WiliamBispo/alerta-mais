@@ -1,14 +1,8 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f9;
-  overflow-x: hidden;
+#content-estatisticas {
+  font-family: 'Poppins', sans-serif;
 }
 
 #content-estatisticas h2 {
-  font-family: "Nunito", sans-serif;
   font-size: 2rem;
   font-weight: 800;
 }
