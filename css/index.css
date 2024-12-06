@@ -71,12 +71,22 @@ span {
 }
 
 img.img {
-    width: 180vw;
+    width: 80vw;
 }
 
 .btn-servico {
     background-color: #0083F1;
     border-radius: 2rem;
+}
+
+.redes-sociais {
+    width: 50px;
+}
+
+.btn-servico:hover {
+    background-color: #0083F1;
+    transform: scale(1.03);
+    box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -85,13 +95,13 @@ footer {
 
 .titulo {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .subtitulo {
     color: #1282ED;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 footer .btn {
