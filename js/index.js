@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         fillOpacity: 0.3,
                         radius: 500
                     }).addTo(map);
-                    circle.bindPopup("<b>" + bairro.bairro + "</b>");
+                    circle.bindPopup('<b>Área Perigosa</b>');
                 });
             }
 
@@ -52,5 +52,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-  
+
 

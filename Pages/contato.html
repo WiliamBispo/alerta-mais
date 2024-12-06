@@ -59,37 +59,40 @@
     <main>
         <section id="content-contato" class="container mt-4">
             <h2 class="text-center mb-4">Fale Conosco</h2>
-            <form>
+            <form id="myForm">
                 <div class="form-group mb-3">
                     <label for="nome" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo">
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome Completo" required>
                 </div>
 
                 <div class="form-group mb-3">
                     <label for="telefone" class="form-label">Telefone</label>
-                    <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(xx) x xxxx-xxxx">
+                    <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(xx) x xxxx-xxxx"
+                        required>
                 </div>
 
                 <div class="form-group mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="email@email.com">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="email@email.com"
+                        required>
                 </div>
 
                 <div class="form-group mb-3">
-                    <label for="serie" class="form-label">Motivo</label>
-                    <select class="form-control" id="serie" name="serie">
+                    <label for="motivo" class="form-label">Motivo</label>
+                    <select class="form-control" id="motivo" name="motivo" required>
                         <option value="" disabled selected>Selecione</option>
                         <option value="sugestao">Sugestão</option>
                         <option value="feedback">Feedback</option>
                         <option value="reclamacao">Reclamação</option>
                         <option value="elogio">Elogio</option>
+                        <option value="elogio">Suporte</option>
                     </select>
                 </div>
 
                 <div class="form-group mb-3">
                     <label for="mensagem" class="form-label">Mensagem</label>
                     <textarea class="form-control" id="mensagem" name="mensagem" rows="4"
-                        placeholder="Escreva a sua mensagem ..."></textarea>
+                        placeholder="Escreva a sua mensagem ..." required></textarea>
                 </div>
 
                 <button id="submitButton" class="btn btn-info text-white d-block mx-auto w-25 my-3">Enviar</button>
@@ -97,6 +100,9 @@
         </section>
     </main>
 
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="/js/email.js"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
