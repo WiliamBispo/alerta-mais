@@ -14,7 +14,7 @@ async function criarGraficos() {
     const labelsGenero = Object.keys(ocorrenciasPorGenero);
     const dadosGenero = Object.values(ocorrenciasPorGenero);
 
-    const ctxGenero = document.getElementById('myChart4').getContext('2d');
+    const ctxGenero = document.getElementById('myChart4');
     new Chart(ctxGenero, {
         type: 'bar',
         data: {
@@ -23,27 +23,21 @@ async function criarGraficos() {
                 label: 'Ocorrências por Gênero',
                 data: dadosGenero,
                 backgroundColor: [
-                    'rgba(54, 162, 235, 0.6)',
-                    'rgba(255, 99, 132, 0.6)'
+                    '#005f73',
+                    '#e29578'
                 ],
-                borderColor: [
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 99, 132, 1)'
-                ],
-                borderWidth: 1
             }]
         },
         options: {
+            maintainAspectRatio: false,
             responsive: true,
             plugins: {
                 title: {
                     display: true,
-                    text: 'Distribuição de Ocorrências por Gênero'
                 }
             },
             scales: {
                 y: {
-                    beginAtZero: true,
                     title: {
                         display: true,
                         text: 'Número de Ocorrências'
@@ -74,7 +68,7 @@ async function criarGraficos() {
     const dadosMes = labelsMes.map(mes => ocorrenciasPorMes[mes] || 0);
 
     // Criar gráfico de meses
-    const ctxMes = document.getElementById('myChart2').getContext('2d');
+    const ctxMes = document.getElementById('myChart2');
     new Chart(ctxMes, {
         type: 'bar',
         data: {
@@ -82,22 +76,19 @@ async function criarGraficos() {
             datasets: [{
                 label: 'Ocorrências por Mês',
                 data: dadosMes,
-                backgroundColor: 'rgba(75, 192, 192, 0.6)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1
+                backgroundColor: '#191970',
             }]
         },
         options: {
+            maintainAspectRatio: false,
             responsive: true,
             plugins: {
                 title: {
                     display: true,
-                    text: 'Distribuição de Ocorrências por Mês'
                 }
             },
             scales: {
                 y: {
-                    beginAtZero: true,
                     title: {
                         display: true,
                         text: 'Número de Ocorrências'
@@ -129,7 +120,7 @@ async function criarGraficos() {
     const dadosBairro = bairrosOrdenados.map(item => item[1]);
 
     // Criar gráfico de bairros
-    const ctxBairro = document.getElementById('myChart1').getContext('2d');
+    const ctxBairro = document.getElementById('myChart1');
     new Chart(ctxBairro, {
         type: 'bar',
         data: {
@@ -137,22 +128,19 @@ async function criarGraficos() {
             datasets: [{
                 label: 'Ocorrências por Bairro (Top 10)',
                 data: dadosBairro,
-                backgroundColor: 'rgba(255, 206, 86, 0.6)',
-                borderColor: 'rgba(255, 206, 86, 1)',
-                borderWidth: 1
+                backgroundColor: '#1b4d3e',
             }]
         },
         options: {
+            maintainAspectRatio: false,
             responsive: true,
             plugins: {
                 title: {
                     display: true,
-                    text: 'Top 10 Bairros por Número de Ocorrências'
                 }
             },
             scales: {
                 y: {
-                    beginAtZero: true,
                     title: {
                         display: true,
                         text: 'Número de Ocorrências'
@@ -163,11 +151,6 @@ async function criarGraficos() {
                         display: true,
                         text: 'Bairros'
                     },
-                    ticks: {
-                        autoSkip: false,
-                        maxRotation: 45,
-                        minRotation: 45
-                    }
                 }
             }
         }
@@ -189,7 +172,7 @@ async function criarGraficos() {
     const dadosDelito = delitosOrdenados.map(item => item[1]);
 
     // Criar gráfico de delitos
-    const ctxDelito = document.getElementById('myChart3').getContext('2d');
+    const ctxDelito = document.getElementById('myChart3');
     new Chart(ctxDelito, {
         type: 'bar',
         data: {
@@ -197,31 +180,34 @@ async function criarGraficos() {
             datasets: [{
                 label: 'Ocorrências por Tipo de Delito',
                 data: dadosDelito,
-                backgroundColor: 'rgba(153, 102, 255, 0.6)',
-                borderColor: 'rgba(153, 102, 255, 1)',
-                borderWidth: 1
+                backgroundColor: '#4b0082',
             }]
         },
         options: {
+            indexAxis: 'y',
+            maintainAspectRatio: false,
             responsive: true,
             plugins: {
                 title: {
                     display: true,
-                    text: 'Tipos de Delito por Número de Ocorrências'
                 }
             },
             scales: {
                 y: {
-                    beginAtZero: true,
+                    ticks: {
+                        font: {
+                            size: 9,
+                        },
+                    },
                     title: {
                         display: true,
-                        text: 'Número de Ocorrências'
+                        text: 'Tipos de Delito',
                     }
                 },
                 x: {
                     title: {
                         display: true,
-                        text: 'Tipos de Delito'
+                        text: 'Número de Ocorrências'
                     },
                     ticks: {
                         autoSkip: false,

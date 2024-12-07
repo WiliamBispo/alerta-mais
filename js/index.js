@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 fillColor: '#fa3a3a',
                 fillOpacity: 0.5,
                 radius: 500
-            }).addTo(map).bindPopup('<b>Área Perigosa</b>');
+            }).addTo(map).bindPopup('<b>Localização atual</b>');
 
             L.circleMarker([latitude, longitude], {
                 fillColor: '#015CE1',
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         fillOpacity: 0.3,
                         radius: 500
                     }).addTo(map);
-                    circle.bindPopup('<b>Área Perigosa</b>');
+                    circle.bindPopup(`<p>${bairro.bairro}</p>`);
                 });
             }
 
