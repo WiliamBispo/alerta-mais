@@ -20,15 +20,15 @@
 }
 
 .left-column p {
-    font-size: 1.6em;
+    font-size: 1.4rem;
     color: #000;
     font-weight: 500;
     text-align: justify;
 }
 
 .left-column span {
-    font-size: 1em;
-    color: #00c9da;
+    font-size: 1.4rem;
+    color: #00919e;
     font-weight: 500;
     text-align: justify;
 }
@@ -66,7 +66,7 @@
 }
 
 .left-column-service p {
-    font-size: 1.4em;
+    font-size: 1.4rem;
     color: #fff;
     font-weight: 500;
     text-align: justify;
@@ -92,7 +92,7 @@ img.img {
     box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-/*SEÇÃO SERVIÇOS*/
+/*SEÇÃO BENEFICIOS*/
 
 .container-beneficios {
     padding: 8rem;
@@ -118,12 +118,17 @@ img.img {
 
 .card {
     width: 18rem;
-    height: 18rem;
+    height: 20rem;
     margin: 10px 30px;
     font-size: 1.25rem;
     border: none;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-text {
+    max-width: 18rem;
+    max-height: 18rem;
 }
 
 .card:hover {
@@ -183,6 +188,18 @@ footer {
     padding: 10px 20px;
 }
 
+footer .btn {
+    background-color: #000;
+    color: #FFFFFF;
+    border-radius: 16px;
+}
+
+footer .btn:hover {
+    background-color: #000;
+    transform: scale(1.03);
+    box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
 .rigth-column-redes h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
@@ -207,18 +224,6 @@ footer {
 .fw-medium {
     text-align: center;
     padding-top: 1rem;
-}
-
-footer .btn {
-    background-color: #1E1E1E;
-    color: #FFFFFF;
-    border-radius: 16px;
-}
-
-footer .btn:hover {
-    background-color: #101010;
-    transform: scale(1.03);
-    box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
