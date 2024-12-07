@@ -37,16 +37,16 @@
                             <a class="nav-link mx-lg-2" href="/mapa.html">Mapa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/Pages/ocorrencias.html">Ocorrências</a>
+                            <a class="nav-link mx-lg-2" href="/pages/ocorrencias.html">Ocorrências</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/Pages/contato.html">Contato</a>
+                            <a class="nav-link mx-lg-2" href="/pages/contato.html">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/Pages/estatistica.html">Estatísticas</a>
+                            <a class="nav-link mx-lg-2" href="/pages/estatistica.html">Estatísticas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/Pages/suporte.html">Suporte</a>
+                            <a class="nav-link mx-lg-2" href="/pages/suporte.html">Suporte</a>
                         </li>
                     </ul>
                 </div>
@@ -54,16 +54,35 @@
         </nav>
     </header>
 
-    <main id="content-estatisticas" class="container mt-5">
-        <h2 class="text-center mb-4">Estatísticas</h2>
+    <main id="content-estatisticas" class="container my-2">
+        <h2 class="text-center m-4">Estatísticas</h2>
         <div class="row">
-            <div class="card shadow col-12 col-lg me-lg-2">
-                <canvas id="myChart1" class="w-100"></canvas>
+            <div class="card-header rounded-2 shadow col-12 col-lg me-lg-2 mt-2">
+                <div class="text-light text-center">Top 10 Bairros por Número de Ocorrências</div>
+                <div class="card px-3">
+                    <canvas id="myChart1" class="w-100"></canvas>
+                </div>
             </div>
 
-            <div class="card shadow col-12 col-lg">
-                <div class="card-body">
+            <div class="card-header rounded-2 shadow col-12 col-lg mt-2">
+                <div class="text-light text-center">Distribuição de Ocorrências por Mês</div>
+                <div class="card px-3">
                     <canvas id="myChart2" class="w-100"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-header rounded-2 shadow col-12 col-lg me-lg-2 mt-2">
+                <div class="text-light text-center">Tipos de Delito por Número de Ocorrências</div>
+                <div class="card px-3">
+                    <canvas id="myChart3" class="w-100"></canvas>
+                </div>
+            </div>
+
+            <div class="card-header shadow rounded-2 col-12 col-lg mt-2">
+                <div class="text-light text-center">Distribuição de Ocorrências por Gênero</div>
+                <div class="card px-3">
+                    <canvas id="myChart4" class="w-100"></canvas>
                 </div>
             </div>
         </div>

@@ -42,30 +42,3 @@
     outline: none;
     box-shadow: none;
 }
-
-.whatsapp-icon {
-    position: fixed;
-    bottom: 100px;
-    right: 30px;
-    background-color: #25D366;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.whatsapp-icon:hover {
-    transform: scale(1.1);
-
-}
-
-.whatsapp-icon i {
-    font-size: 30px;
-    color: #fff;
-}
