@@ -52,3 +52,11 @@
         transform: rotate(360deg);
     }
 }
+
+@media (max-width: 576px) {
+
+    #content-contato h2 {
+        font-size: 1.60em;
+    }
+
+}

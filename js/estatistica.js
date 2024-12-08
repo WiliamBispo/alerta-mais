@@ -14,7 +14,7 @@ async function criarGraficos() {
     const labelsGenero = Object.keys(ocorrenciasPorGenero);
     const dadosGenero = Object.values(ocorrenciasPorGenero);
 
-    const ctxGenero = document.getElementById('myChart1').getContext('2d');
+    const ctxGenero = document.getElementById('myChart4').getContext('2d');
     new Chart(ctxGenero, {
         type: 'bar',
         data: {
@@ -129,7 +129,7 @@ async function criarGraficos() {
     const dadosBairro = bairrosOrdenados.map(item => item[1]);
 
     // Criar gráfico de bairros
-    const ctxBairro = document.getElementById('myChart3').getContext('2d');
+    const ctxBairro = document.getElementById('myChart1').getContext('2d');
     new Chart(ctxBairro, {
         type: 'bar',
         data: {
@@ -189,7 +189,7 @@ async function criarGraficos() {
     const dadosDelito = delitosOrdenados.map(item => item[1]);
 
     // Criar gráfico de delitos
-    const ctxDelito = document.getElementById('myChart4').getContext('2d');
+    const ctxDelito = document.getElementById('myChart3').getContext('2d');
     new Chart(ctxDelito, {
         type: 'bar',
         data: {
