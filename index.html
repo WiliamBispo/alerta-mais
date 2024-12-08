@@ -18,7 +18,8 @@
 
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" />
+
 </head>
 
 <body>
@@ -42,11 +43,22 @@
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="/pages/ocorrencias.html">Ocorrências</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/pages/contato.html">Contato</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Ferramentas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/pages/cursos.html">Cursos</a></li>
+                                <li><a class="dropdown-item" href="/pages/jogos.html">Jogos</a></li>
+                                <li><a class="dropdown-item" href="/pages/videos.html">Vídeos</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="/pages/estatistica.html">Estatísticas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="/pages/contato.html">Contato</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="/pages/suporte.html">Suporte</a>
@@ -73,18 +85,18 @@
 
         <section class="content-service pb-0">
             <div class="d-flex">
-                <img src="/img/Group 68 (3).png" class="img">
+                <img src="/img/group.png" class="img">
             </div>
 
             <div class="left-column-service mb-3">
-                <h1 class="titulo text-light">Uma Plataforma que vai <span>ALÉM!</span></h1>
+                <h2 class="titulo text-light">Uma Plataforma que vai <span>ALÉM!</span></h2>
                 <p class="text-light text-justify fw-medium">
                     Com o Alerta+, além de acessar o mapa com locais de risco,
                     você tem acesso rápido
                     e fácil aos
                     serviços necessários. Conectamos você aos canais de registro de ocorrência, direcionando-o ao órgão
                     correto para uma solução eficiente. <span>Mais praticidade, mais segurança, sempre ao seu
-                    alcance.</span>
+                        alcance.</span>
                 </p>
             </div>
         </section>
@@ -93,70 +105,73 @@
             <h2>Nossos Principais</h2>
             <h2><span>Benefícios</span></h2>
 
-            <div class="content-beneficios">
-                <div class="card card01">
-                    <div class="card-header">Segurança <br> Participativa</div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            O aplicativo notifica os usuários sobre áreas de risco
-                            próximas, permitindo decisões mais seguras no momento certo.
-                        </p>
+            <div class="beneficios">
+                <div class="content-beneficios">
+                    <div class="card card01">
+                        <div class="card-header">Segurança <br> Participativa</div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                O aplicativo notifica os usuários sobre áreas de risco
+                                próximas, permitindo decisões mais seguras no momento certo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card card02">
+                        <div class="card-header">Educação em <br> segurança</div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Oferecemos conteúdos educativos, como vídeos, minicursos e jogos, para promover a
+                                conscientização e práticas de prevenção.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card card01">
+                        <div class="card-header">Estatísticas <br> Acessíveis</div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Disponibilizamos informações sobre índices
+                                de criminalidade por bairro, ajudando na compreensão e no planejamento de sua segurança.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card card02">
-                    <div class="card-header">Educação em segurança</div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            Oferecemos conteúdos educativos, como vídeos, minicursos e jogos, para promover a
-                            conscientização e práticas de prevenção.
-                        </p>
-                    </div>
-                </div>
 
-                <div class="card card01">
-                    <div class="card-header">Estatísticas <br> Acessíveis</div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            Disponibilizamos informações sobre índices
-                            de criminalidade por bairro, ajudando na compreensão e no planejamento de sua segurança.
-                        </p>
+                <div class="content-beneficios">
+                    <div class="card card02">
+                        <div class="card-header">Assistência <br> Prática</div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Orienta sobre como e onde registrar
+                                boletins de ocorrência, indicando delegacias especializadas e facilitando o processo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card card01">
+                        <div class="card-header">Comunicação Bidirecional</div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Permite feedback e sugestões dos cidadãos
+                                sobre segurança pública, além de receber comunicados oficiais de emergência.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card card02">
+                        <div class="card-header">Custo Baixo e Acessibilidade</div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Projetado para ser acessível a todos,
+                                garantindo segurança e informação para a maior parte da população.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-
-            <div class="content-beneficios">
-                <div class="card card02">
-                    <div class="card-header">Assistência <br> Prática</div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            Orienta sobre como e onde registrar
-                            boletins de ocorrência, indicando delegacias especializadas e facilitando o processo.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card card01">
-                    <div class="card-header">Comunicação Bidirecional</div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            Permite feedback e sugestões dos cidadãos
-                            sobre segurança pública, além de receber comunicados oficiais de emergência.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card card02">
-                    <div class="card-header">Custo Baixo e Acessibilidade</div>
-                    <div class="card-body">
-                        <p class="card-text">
-                            Projetado para ser acessível a todos,
-                            garantindo segurança e informação para a maior parte da população.
-                        </p>
-                    </div>
-                </div>
-            </div>
         </section>
 
     </main>
@@ -185,14 +200,14 @@
             </div>
         </div>
 
-        <div class="pt-5 text-center">
+        <div class="pt-5 text-center footer-copy">
             <p>Alerta+ &copy; Todos os direitos reservados.</p>
         </div>
 
     </footer>
 
 
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="/js/index.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

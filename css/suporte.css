@@ -42,3 +42,28 @@
     outline: none;
     box-shadow: none;
 }
+
+
+@media (max-width: 768px) {
+    #content-suporte p {
+        font-size: 1.2rem;
+    }
+
+    .accordion-button {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    #content-suporte h2 {
+        font-size: 1.60em;
+    }
+
+    #content-suporte p {
+        font-size: 1rem;
+    }
+
+    .accordion-button {
+        font-size: 14px;
+    }
+}

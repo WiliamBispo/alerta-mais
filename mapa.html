@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="/css/mapa.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 
 <body>
@@ -41,11 +41,22 @@
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="/pages/ocorrencias.html">Ocorrências</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/pages/contato.html">Contato</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Ferramentas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/pages/cursos.html">Cursos</a></li>
+                                <li><a class="dropdown-item" href="/pages/jogos.html">Jogos</a></li>
+                                <li><a class="dropdown-item" href="/pages/videos.html">Vídeos</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="/pages/estatistica.html">Estatísticas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="/pages/contato.html">Contato</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="/pages/suporte.html">Suporte</a>
@@ -61,7 +72,7 @@
     </main>
 
 
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="/js/index.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

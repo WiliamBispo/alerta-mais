@@ -39,11 +39,22 @@
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="/pages/ocorrencias.html">Ocorrências</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="/pages/contato.html">Contato</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Ferramentas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/pages/cursos.html">Cursos</a></li>
+                                <li><a class="dropdown-item" href="/pages/jogos.html">Jogos</a></li>
+                                <li><a class="dropdown-item" href="/pages/videos.html">Vídeos</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="/pages/estatistica.html">Estatísticas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="/pages/contato.html">Contato</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="/pages/suporte.html">Suporte</a>
@@ -54,28 +65,30 @@
         </nav>
     </header>
 
-    <main id="content-ferramentas" class="container mt-4">
+    <main id="content-videos" class="container mt-4">
         <h2 class="text-center mb-4">Vídeos</h2>
-    </main>
 
-    <!-- Card do vídeo -->
-    <div class="card mx-auto" style="max-width: 800px;">
-        <div class="row g-0">
-            <div class="col-md-6">
-                <video class="img" controls poster="/img/capa-video1.png" style="height: 300px;" onclick="this.play()">
-                    <source src="/videos/video1.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="col-md-6">
-                <div class="card-body">
-                    <h5 class="card-title">Dicas de Segurança nas Ruas</h5>
-                    <p class="card-text">Aprenda como se proteger e aumentar sua segurança enquanto caminha pelas ruas.
-                        Clique no vídeo para assistir.</p>
-                    <p class="card-text"><small class="text-muted">1 minuto e 42 segundos</small></p>
+        <!-- Card do vídeo -->
+        <div class="card mx-auto" style="max-width: 800px;">
+            <div class="row g-0">
+                <div class="col-md-6">
+                    <video class="img" controls poster="/img/capa-video1.png" style="height: 300px;"
+                        onclick="this.play()">
+                        <source src="/videos/video1.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Dicas de Segurança nas Ruas</h5>
+                        <p class="card-text">Aprenda como se proteger e aumentar sua segurança enquanto caminha pelas
+                            ruas.
+                            Clique no vídeo para assistir.</p>
+                        <p class="card-text"><small class="text-muted">1 minuto e 42 segundos</small></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">

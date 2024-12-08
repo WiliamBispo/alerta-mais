@@ -3,8 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
-    padding: 8rem;
+    gap: 6rem;
+    padding: 7.5rem 5rem 8rem 5rem;
 }
 
 .left-column {
@@ -30,7 +30,6 @@
     font-size: 1.4rem;
     color: #00919e;
     font-weight: 500;
-    text-align: justify;
 }
 
 #map {
@@ -46,14 +45,16 @@
     background-color: #023463;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 4.4rem 5rem 0 5rem;
 }
 
 .left-column-service {
-    max-width: 80vw;
+    max-width: 40%;
+    flex: 1;
 }
 
-.left-column-service h1 {
+.left-column-service h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: #fff;
@@ -79,6 +80,7 @@
 img.img {
     width: 46vw;
     z-index: 1000;
+    flex: 1;
 }
 
 .btn-servico {
@@ -95,40 +97,46 @@ img.img {
 /*SEÇÃO BENEFICIOS*/
 
 .container-beneficios {
-    padding: 8rem;
+    padding: 4rem 2rem
 }
 
 .container-beneficios h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 3.2em;
+    font-size: 3.2rem;
     font-weight: 700;
     text-align: center;
+    margin: 0.5rem 0;
 }
 
 .container-beneficios span {
     color: #1282ED;
 }
 
+.beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que os grupos de benefícios se ajustem em telas menores */
+    justify-content: center;
+}
+
 .content-beneficios {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
 }
 
 .card {
-    width: 18rem;
+    width: 300px;
     height: 20rem;
     margin: 10px 30px;
     font-size: 1.25rem;
     border: none;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-text {
-    max-width: 18rem;
-    max-height: 18rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
 }
 
 .card:hover {
@@ -137,15 +145,20 @@ img.img {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card01 {
-    background-color: #023463;
-    color: #fff;
-}
-
 .card-header {
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     text-align: center;
+}
+
+.card-text {
+    max-width: 18rem;
+    max-height: 18rem;
+}
+
+.card01 {
+    background-color: #023463;
+    color: #fff;
 }
 
 .card02 {
@@ -157,13 +170,14 @@ img.img {
 footer {
     background-color: #023463;
     color: #fff;
-    padding: 4rem;
+    padding: 4rem 2rem;
     border-top: solid 1px #e0e0e0;
     padding-bottom: 1rem;
 }
 
 .redes-sociais {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
@@ -186,12 +200,15 @@ footer {
     font-size: 1rem;
     font-weight: bold;
     padding: 10px 20px;
+    display: inline-block;
 }
 
 footer .btn {
     background-color: #000;
     color: #FFFFFF;
     border-radius: 16px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 footer .btn:hover {
@@ -213,12 +230,13 @@ footer .btn:hover {
 }
 
 .links img {
-    width: 50px;
+    width: 40px;
     cursor: pointer;
+    transition: transform 0.2s;
 }
 
 .links img:hover {
-    transform: scale(1.04);
+    transform: scale(1.1);
 }
 
 .fw-medium {
@@ -226,8 +244,236 @@ footer .btn:hover {
     padding-top: 1rem;
 }
 
+
+
+
+
+
+/*SOBRE*/
+@media (max-width: 1270px) {
+    .content {
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+
+    .left-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    #map {
+        width: 85%;
+        height: 60vh;
+    }
+}
+
+
 @media (max-width: 768px) {
+    .content {
+        padding: 4rem 2rem;
+    }
+
+    #map {
+        width: 85%;
+        height: 50vh;
+    }
+
+    .left-column h2 {
+        font-size: 2.5em;
+    }
+
+    .left-column p,
+    .left-column span {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 2rem 1rem;
+        gap: 1rem;
+    }
+
+    .left-column h2 {
+        font-size: 2em;
+    }
+
+    .left-column p,
+    .left-column span {
+        font-size: 1rem;
+    }
+
+    #map {
+        height: 40vh;
+    }
+}
+
+
+
+
+
+/*SERVIÇOS*/
+@media (max-width: 1270px) {
     .content-service {
         flex-direction: column-reverse;
+    }
+
+    .left-column-service {
+        max-width: 80%;
+        text-align: center;
+    }
+
+    img.img {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-service {
+        padding: 3rem 2rem;
+    }
+
+    .left-column-service {
+        max-width: 100%;
+    }
+
+    .left-column-service h2 {
+        font-size: 2.25rem;
+    }
+
+    .left-column-service p {
+        font-size: 1.2rem;
+    }
+
+    img.img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-service {
+        padding: 2rem 1rem;
+    }
+
+    .left-column-service h2 {
+        font-size: 1.8rem;
+    }
+
+    .left-column-service p {
+        font-size: 1rem;
+    }
+
+    img.img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*BENEFICIOS*/
+@media (max-width: 768px) {
+    .container-beneficios {
+        padding: 3rem 1rem;
+    }
+
+    .container-beneficios h2 {
+        font-size: 2.5rem;
+    }
+
+    .content-beneficios {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-beneficios {
+        padding: 2rem 1rem;
+    }
+
+    .container-beneficios h2 {
+        font-size: 1.8rem;
+    }
+
+    .content-beneficios {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .card {
+        width: 100%;
+        height: 18rem;
+        max-width: 280px;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .card-header {
+        font-size: 1rem;
+    }
+}
+
+
+
+/*FOOTTER*/
+@media (max-width: 768px) {
+    .redes-sociais {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .left-column-redes {
+        justify-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .left-column-redes h2 {
+        font-size: 2rem;
+    }
+
+    .left-column-redes p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 2rem 1rem;
+    }
+
+    .left-column-redes h2 {
+        font-size: 1.8rem;
+    }
+
+    .left-column-redes p {
+        font-size: 1rem;
+    }
+
+    .links img {
+        width: 35px;
+    }
+
+    footer .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .footer-copy p {
+        margin-bottom: 0;
     }
 }

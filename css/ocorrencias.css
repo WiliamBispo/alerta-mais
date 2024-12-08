@@ -1,5 +1,17 @@
-#content-ocorrencias h2 {
+#content-ocorrencias {
     font-family: 'Poppins', sans-serif;
+    padding-top: 2rem;
+}
+
+#content-ocorrencias h2 {
     font-size: 2rem;
     font-weight: 800;
+}
+
+@media (max-width: 576px) {
+
+    #content-ocorrencias h2 {
+        font-size: 1.60em;
+    }
+
 }
