@@ -1,5 +1,6 @@
 #content-estatisticas {
   font-family: 'Poppins', sans-serif;
+  padding-top: 1rem;
 }
 
 #content-estatisticas h2 {
@@ -7,11 +8,17 @@
   font-weight: 800;
 }
 
+.card {
+  height: 340px;
+}
+
+.card-header {
+  background-color: #25AADA;
+}
 
 @media (max-width: 576px) {
 
   #content-estatisticas h2 {
     font-size: 1.60em;
   }
-
 }
