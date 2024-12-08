@@ -45,10 +45,6 @@
 
 
 @media (max-width: 768px) {
-    #content-suporte h2 {
-        font-size: 2em;
-    }
-
     #content-suporte p {
         font-size: 1.2rem;
     }

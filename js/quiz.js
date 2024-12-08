@@ -176,16 +176,15 @@ function showResults() {
   resultElement.innerHTML = `
     <h3>Quiz concluído!</h3>
     <p>Sua pontuação: ${percentage}% (${score}/${questions.length} perguntas corretas)</p>
-    ${
-      mistakes.length > 0
-        ? `<p><strong>Você cometeu os seguintes erros:</strong></p>
+    ${mistakes.length > 0
+      ? `<p><strong>Você cometeu os seguintes erros:</strong></p>
            <ul>${mistakes
-             .map(
-               (mistake) =>
-                 `<li><strong>${mistake.question}</strong>:<br> ${mistake.explanation}</li>`
-             )
-             .join("")}</ul>`
-        : "<p>Parabéns! Você acertou todas as questões.</p>"
+        .map(
+          (mistake) =>
+            `<li><strong>${mistake.question}</strong><br> ${mistake.explanation}</li>`
+        )
+        .join("")}</ul>`
+      : "<p>Parabéns! Você acertou todas as questões.</p>"
     }
     <p>Continue aprendendo sobre segurança para manter-se protegido!</p>
     <button id="retryQuiz" class="retry-button" onclick="resetQuiz()">Refazer Quiz</button>

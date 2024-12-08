@@ -40,6 +40,19 @@
     color: #25AADA;
 }
 
+.dropdown-menu {
+    background-color: #023463;
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: #25AADA;
+}
+
+.navbar .nav-item.dropdown:focus-within .nav-link {
+    color: #25AADA;
+}
+
 
 @media (max-width: 768px) {
     .navbar img {
