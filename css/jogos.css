@@ -38,7 +38,7 @@
 }
 
 .btn-primary {
-    background-color: #25AADA;
+    background-color: #023463;
     color: white;
     border: none;
     text-transform: uppercase;
@@ -48,7 +48,7 @@
 }
 
 .btn-primary:hover {
-    background-color: #2398C6;
+    background-color: #034E87;
     color: white;
 }
 
